@@ -19,6 +19,8 @@ export default function LoginPage() {
   // Load auth state on mount, redirect if already logged in
   useEffect(() => {
     loadFromStorage();
+    // Silently initialize database in the background
+    fetch('/api/init-db').catch((e) => console.error("Database initialization failed:", e));
   }, []);
 
   useEffect(() => {
