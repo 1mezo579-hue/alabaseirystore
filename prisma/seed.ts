@@ -106,6 +106,34 @@ async function main() {
       ]
     },
     {
+      name: "كروت شحن ورصيد",
+      products: [
+        { name: "شحن رصيد كارت فودافون فئة 50", costPrice: 50, price: 50, barcode: "60001001", stock: 100, minStock: 10 },
+        { name: "شحن رصيد كارت اتصالات فئة 50", costPrice: 50, price: 50, barcode: "60001002", stock: 100, minStock: 10 },
+        { name: "شحن رصيد كارت اورنج فئة 50", costPrice: 50, price: 50, barcode: "60001003", stock: 100, minStock: 10 },
+        { name: "تحويل كاش فودافون", costPrice: 0, price: 5, priceType: "service", stock: 9999, minStock: 0 },
+        { name: "تحويل كاش اتصالات", costPrice: 0, price: 5, priceType: "service", stock: 9999, minStock: 0 },
+      ]
+    },
+    {
+      name: "خدمات فوري والدفع الإلكتروني",
+      products: [
+        { name: "دفع فاتورة كهرباء فوري", costPrice: 0, price: 5, priceType: "service", stock: 9999, minStock: 0 },
+        { name: "دفع فاتورة مياه فوري", costPrice: 0, price: 5, priceType: "service", stock: 9999, minStock: 0 },
+        { name: "دفع فاتورة غاز فوري", costPrice: 0, price: 5, priceType: "service", stock: 9999, minStock: 0 },
+        { name: "شحن خط أرضي Telecom Egypt", costPrice: 0, price: 5, priceType: "service", stock: 9999, minStock: 0 },
+      ]
+    },
+    {
+      name: "قطع غيار وإكسسوارات كمبيوتر",
+      products: [
+        { name: "ذاكرة عشوائية Kingston RAM 8GB DDR4 Laptop", costPrice: 650, price: 900, barcode: "70001001", stock: 10, minStock: 2 },
+        { name: "وحدة تخزين Kingston SSD 240GB A400 SATA", costPrice: 750, price: 1100, barcode: "70001002", stock: 8, minStock: 2 },
+        { name: "وحدة تخزين هارد ديسك WD Blue 1TB PC", costPrice: 1600, price: 2100, barcode: "70001003", stock: 5, minStock: 1 },
+        { name: "ماوس سلكي ميني USB أسود", costPrice: 40, price: 80, barcode: "70001004", stock: 25, minStock: 5 },
+      ]
+    },
+    {
       name: "صيانة وقطع غيار",
       products: [
         { name: "خدمة تغيير شاشة هاتف فئة متوسطة", costPrice: 800, price: 1500, priceType: "service", stock: 9999, minStock: 0 },
