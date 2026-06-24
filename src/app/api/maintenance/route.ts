@@ -18,11 +18,11 @@ export async function GET(req: NextRequest) {
 
     if (query) {
       where.OR = [
-        { orderNo: { contains: query } },
-        { customerName: { contains: query } },
-        { customerPhone: { contains: query } },
-        { deviceModel: { contains: query } },
-        { deviceBrand: { contains: query } },
+        { orderNo: { contains: query, mode: 'insensitive' } },
+        { customerName: { contains: query, mode: 'insensitive' } },
+        { customerPhone: { contains: query, mode: 'insensitive' } },
+        { deviceModel: { contains: query, mode: 'insensitive' } },
+        { deviceBrand: { contains: query, mode: 'insensitive' } },
       ];
     }
 
